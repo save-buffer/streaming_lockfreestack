@@ -1,0 +1,4 @@
+g++ lfstack.cpp -O3 -mavx2 -mcx16 -lpthread -o lfstack_basic
+g++ -DSTREAMING lfstack.cpp -O3 -mavx2 -mcx16 -lpthread -o lfstack_streaming
+
+g++ -ggdb -DSTREAMING lfstack.cpp -mavx2 -mcx16 -lpthread -o lfstack_streaming_debug
